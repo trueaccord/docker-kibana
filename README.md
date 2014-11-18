@@ -8,7 +8,11 @@ This repository contains a **Dockerfile** for the latest release of [Kibana](htt
 
 ### Installation
 
-To build an image from the docker file: `docker build -t="eliotk/docker-kibana" github.com/eliotk/docker-kibana`
+1. Install [Docker](https://www.docker.com/).
+
+2. Download [automated build](https://registry.hub.docker.com/u/eliotk/docker-kibana/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull eliotk/docker-kibana`
+
+   (alternatively, you can build an image from the Dockerfile: `docker build -t="eliotk/docker-kibana" github.com/eliotk/docker-kibana`)
 
 ### Usage
 
