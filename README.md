@@ -22,9 +22,11 @@ To start a Kibana container, run:
 
 Kibana needs to use the 1.4 version of elasticsearch.
 
-To run the Kibana container with a linked version of elasticsearch 1.4, first run an elasticsearch Docker container named "elasticsearch":
+To run the Kibana container with a linked version of elasticsearch 1.4, first run an elasticsearch Docker container named "elasticsearch".
 
-`docker run -d -p 9200:9200 -p 9300:9300 --name elasticsearch eliotk/elasticsearch-beta`
+Pull the dockerfile/elasticsearch image if you don't have the latest 1.4 version: `docker pull dockerfile/elasticsearch`
+
+`docker run -d -p 9200:9200 -p 9300:9300 --name elasticsearch dockerfile/elasticsearch`
 
 Then run a Kibana container with a link to the elasticsearch container:
 
