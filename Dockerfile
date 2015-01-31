@@ -7,7 +7,7 @@
 # Pull base image.
 FROM dockerfile/java:oracle-java7
 
-ENV KIBANA_VERSION=4.0.0-BETA3
+ENV KIBANA_VERSION 4.0.0-BETA3
 
 # Install Kibana
 RUN \
