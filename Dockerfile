@@ -12,7 +12,7 @@ ENV KIBANA_VERSION 4.0.0-BETA3
 # Install Kibana
 RUN \
   cd /tmp && \
-  wget https://download.elasticsearch.org/kibana/kibana/$KIBANA_VERSION.tar.gz && \
+  wget https://download.elasticsearch.org/kibana/kibana/kibana-$KIBANA_VERSION.tar.gz && \
   tar xvzf kibana-$KIBANA_VERSION.tar.gz && \
   rm -f kibana-$KIBANA_VERSION.tar.gz && \
   mv /tmp/kibana-$KIBANA_VERSION /kibana
